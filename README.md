@@ -9,7 +9,7 @@ To make your own `.bst` files, comment/ uncomment the appropriate lines in `imsi
 ```bash
 latex imsi.dbj
 ```
-## Examples
+## BSTs
 
 Some example `.bst` files can be found in the `BSTs` subdirectory. These are:
 
