@@ -4,7 +4,7 @@ A set of `.bst` files intended to resemble the bibliography style of common acad
 
 ## BSTs
 
-Some example `.bst` files can be found in the `BSTs` subdirectory. These are:
+Some example `.bst` files can be found in the `./BSTs` subdirectory. These are:
 
 - author_year_whole_title_all_authors.bst: To have the citation style displaying [authorYear] in text and show all authors in the bibliography
 - BiochemJ.bst: To resemble the citation style of *Biochemical Journal* 
@@ -13,7 +13,7 @@ Some example `.bst` files can be found in the `BSTs` subdirectory. These are:
 
 ## How to make your own BibTeX Style Files
 
-To make your own `.bst` files, comment/ uncomment the appropriate lines in `imsi.dbj`then run 
+To make your own `.bst` files, comment/ uncomment the appropriate lines in `imsi.dbj` in the subdirectory `./makefiles` then run 
 
 ```bash
 latex imsi.dbj
