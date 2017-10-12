@@ -1,4 +1,4 @@
-%% Bioessays.bst
+%% one_author_no_title.bst
 %% Copyright 2017 J. Aryaman
 %
 % This work may be distributed and/or modified under the
@@ -13,9 +13,10 @@
 % 
 % The Current Maintainer of this work is J. Aryaman
 %
-% This work consists of the file Bioessays.bst 
+% This work consists of the file one_author_no_title.bst 
 
 % This work is derived from imsi.dbj and merlin.mbs
+
 
 
 %%
@@ -24,7 +25,7 @@
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `nat,seq-no,nm-rvx,jnrlst,nmlm,x4,m4,mcite,mct-4,mct-x4,nmft,nmft-bf,keyxyr,dt-beg,yr-per,yrp-per,note-yr,atit-u,jxper,vol-bf,vnum-x,volp-sp,pp-last,num-xser,jnm-x,pre-pub,blk-tit,ppx,ed,xedn,xand,etal-rm,nfss,')
+%% merlin.mbs  (with options: `nat,seq-no,nm-rvx,jnrlst,nmlm,x1,m1,mcite,mct-1,nmft,nmft-bf,keyxyr,dt-beg,yr-per,yrp-per,note-yr,atit-u,jtit-x,jxper,vol-bf,vnum-x,volp-sp,pp-last,num-xser,jnm-x,pre-pub,blk-tit,ppx,ed,xedn,jabr,jaa,xand,etal-rm,nfss,')
 %% ----------------------------------------
 %% *** for bioessays ***
 %% 
@@ -331,46 +332,47 @@ MACRO {nov} {"November"}
 
 MACRO {dec} {"December"}
 
-MACRO {acmcs} {"ACM Computing Surveys"}
+MACRO {acmcs} {"ACM Comput. Surv."}
 
-MACRO {acta} {"Acta Informatica"}
+MACRO {acta} {"Acta Inf."}
 
-MACRO {cacm} {"Communications of the ACM"}
+MACRO {cacm} {"Commun. ACM"}
 
-MACRO {ibmjrd} {"IBM Journal of Research and Development"}
+MACRO {ibmjrd} {"IBM J. Res. Dev."}
 
-MACRO {ibmsj} {"IBM Systems Journal"}
+MACRO {ibmsj} {"IBM Syst.~J."}
 
-MACRO {ieeese} {"IEEE Transactions on Software Engineering"}
+MACRO {ieeese} {"IEEE Trans. Software Eng."}
 
-MACRO {ieeetc} {"IEEE Transactions on Computers"}
+MACRO {ieeetc} {"IEEE Trans. Comput."}
 
 MACRO {ieeetcad}
- {"IEEE Transactions on Computer-Aided Design of Integrated Circuits"}
+ {"IEEE Trans. Comput. Aid. Des."}
 
-MACRO {ipl} {"Information Processing Letters"}
+MACRO {ipl} {"Inf. Process. Lett."}
 
-MACRO {jacm} {"Journal of the ACM"}
+MACRO {jacm} {"J.~ACM"}
 
-MACRO {jcss} {"Journal of Computer and System Sciences"}
+MACRO {jcss} {"J.~Comput. Syst. Sci."}
 
-MACRO {scp} {"Science of Computer Programming"}
+MACRO {scp} {"Sci. Comput. Program."}
 
-MACRO {sicomp} {"SIAM Journal on Computing"}
+MACRO {sicomp} {"SIAM J. Comput."}
 
-MACRO {tocs} {"ACM Transactions on Computer Systems"}
+MACRO {tocs} {"ACM Trans. Comput. Syst."}
 
-MACRO {tods} {"ACM Transactions on Database Systems"}
+MACRO {tods} {"ACM Trans. Database Syst."}
 
-MACRO {tog} {"ACM Transactions on Graphics"}
+MACRO {tog} {"ACM Trans. Graphic."}
 
-MACRO {toms} {"ACM Transactions on Mathematical Software"}
+MACRO {toms} {"ACM Trans. Math. Software"}
 
-MACRO {toois} {"ACM Transactions on Office Information Systems"}
+MACRO {toois} {"ACM Trans. Office Inf. Syst."}
 
-MACRO {toplas} {"ACM Transactions on Programming Languages and Systems"}
+MACRO {toplas} {"ACM Trans. Progr. Lang. Syst."}
 
-MACRO {tcs} {"Theoretical Computer Science"}
+MACRO {tcs} {"Theor. Comput. Sci."}
+
 FUNCTION {bibinfo.check}
 { swap$
   duplicate$ missing$
@@ -429,9 +431,9 @@ FUNCTION {format.names}
       't :=
       nameptr #1 >
         {
-          nameptr #4
+          nameptr #1
           #1 + =
-          numnames #4
+          numnames #1
           > and
             { "others" 't :=
               #1 'namesleft := }
@@ -562,9 +564,9 @@ FUNCTION {format.full.names}
       't :=
       nameptr #1 >
         {
-          nameptr #4
+          nameptr #1
           #1 + =
-          numnames #4
+          numnames #1
           > and
             { "others" 't :=
               #1 'namesleft := }
@@ -1039,8 +1041,6 @@ FUNCTION {article}
   format.authors "author" output.check
   format.date "year" output.check
   date.block
-  format.title "title" output.check
-  new.sentence
   crossref missing$
     {
       journal
@@ -1144,8 +1144,6 @@ FUNCTION {incollection}
   format.authors "author" output.check
   format.date "year" output.check
   date.block
-  format.title "title" output.check
-  new.sentence
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
       format.publisher.address output
@@ -1167,8 +1165,6 @@ FUNCTION {inproceedings}
   format.authors "author" output.check
   format.date "year" output.check
   date.block
-  format.title "title" output.check
-  new.sentence
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
       publisher empty$
