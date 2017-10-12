@@ -1,6 +1,6 @@
 # BibTeX-BSTs
 
-A set of `.bst` files intended to resemble the bibliography style of common academic journals for use with the LaTeX bibliography managing system BibTeX.
+A set of `.bst` files intended to resemble the bibliography style of common academic journals for use with the LaTeX bibliography managing system BibTeX. `makefiles` are also included to create your own `.bst` files.
 
 ## Usage
 
