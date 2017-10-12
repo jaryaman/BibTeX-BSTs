@@ -11,7 +11,7 @@ Some example `.bst` files can be found in the `./BSTs` subdirectory. These are:
 - Bioessays.bst: To resemble the citation style of *Bioessays*
 - one_author_no_title.bst: To show a single author in the bibliography, with no title. This loosely resembles Physical Review Letters
 
-## How to make your own BibTeX Style Files
+## How to make your own BibTeX style files
 
 To make your own `.bst` files, comment/ uncomment the appropriate lines in `imsi.dbj` in the subdirectory `./makefiles` then run 
 
