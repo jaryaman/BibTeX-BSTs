@@ -27,8 +27,8 @@ End of customized bst file
 %------\ans=*(==)-------
 %>>INTERNAL LANGUAGE SUPPORT (if no external language file)
 %<<STYLE OF CITATIONS:
-%   %: (def) Numerical as in standard LaTeX
-  ay,%: Author-year with some non-standard interface
+   %: (def) Numerical as in standard LaTeX
+%  ay,%: Author-year with some non-standard interface
 % alph,%: Alpha style, Jon90 or JWB90 for single or multiple authors
 % alph,alf-1,%: Alpha style, Jon90 even for multiple authors
 % alph,alf-f,%: Alpha style, Jones90 (full name of first author)
@@ -84,13 +84,13 @@ End of customized bst file
 %------\ans=*(==)-------
 %>>ORDERING OF REFERENCES (if non-author/year and non-alph)
 %<<ORDERING OF REFERENCES (if author-year citations)
-   %: (def) Alphabetical by all authors
+%   %: (def) Alphabetical by all authors
 % seq-lab,%: By label (Jones before Jones and James before Jones et al)
 % seq-labc,%: By label and cite order (like above but all Jones et al ordered as cited)
 % seq-key,%: By label and cite key instead of label and title, as above
 % seq-yr,%: Year ordered and then by authors (for publication lists)
 % seq-yrr,%: Reverse year ordered and then by authors (most recent first)
-%  seq-no,%: Citation order (unsorted, only meaningful for numericals)
+  seq-no,%: Citation order (unsorted, only meaningful for numericals)
 %------\ans=c(==seq-no)-------
 %>>ORDERING OF REFERENCES (if author-year citations)
 %<<ORDER ON VON PART (if not citation order)
@@ -146,22 +146,22 @@ End of customized bst file
 %------\ans=*(==)-------
 %>>ADJACENT REFERENCES WITH REPEATED NAMES:
 %<<NUMBER OF AUTHORS IN BIBLIOGRAPHY:
-   %: (def) All authors included in listing
-%  nmlm,%: Limited authors (et al replaces missing names)
+%   %: (def) All authors included in listing
+  nmlm,%: Limited authors (et al replaces missing names)
 %------\ans=l(==nmlm)-------
 %>>NUMBER OF AUTHORS IN BIBLIOGRAPHY:
-%    x4,%: Maximum of 4 authors
-%    m4,%: Minimum of 4 authors
+    x4,%: Maximum of 4 authors
+    m4,%: Minimum of 4 authors
 %<<AUTHORS IN CITATIONS:
 %    %: (def) One author et al for three or more authors
-mcite,%: Some other truncation scheme 
+ mcite,%: Some other truncation scheme 
 %------\ans=*(==)-------
 %>>AUTHORS IN CITATIONS:
 %<<MAX AUTHORS BEFORE ET AL: (if regular cite not selected)
- mct-1,%: One et al 
+% mct-1,%: One et al 
 % mct-2,%: One, Two et al 
 % mct-3,%: One, Two, Three et al 
-% mct-4,%: One, Two, Three, Four et al 
+ mct-4,%: One, Two, Three, Four et al 
 % mct-5,%: One, Two, Three, Four, Five et al 
 % mct-6,%: One, Two, Three, Four, Five, Six et al 
 %------\ans=*(==mct-1)-------
@@ -169,7 +169,7 @@ mcite,%: Some other truncation scheme
 %<<MAX AUTHORS WITHOUT ET AL: (if regular cite not selected)
 % mct-x2,%: Two authors without truncating 
 % mct-x3,%: Three authors without truncating
-% mct-x4,%: Four authors without truncating
+ mct-x4,%: Four authors without truncating
 % mct-x5,%: Five authors without truncating
 % mct-x6,%: Six authors without truncating
 %------\ans=*(==mct-x2)-------
