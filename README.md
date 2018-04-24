@@ -9,6 +9,7 @@ Some example `.bst` files can be found in the `./BSTs` subdirectory. Where the c
 - author_year_whole_title_all_authors.bst: To have the citation style displaying [authorYear] in text and show all authors in the bibliography
 - BiochemJ.bst: To resemble the citation style of *Biochemical Journal* 
 - Bioessays.bst: To resemble the citation style of *Bioessays*
+- cell.bst: To resemble the citation style of *Cell*
 - one_author_no_title.bst: To show a single author in the bibliography, with no title. This loosely resembles Physical Review Letters
 
 ## How to make your own BibTeX style files
