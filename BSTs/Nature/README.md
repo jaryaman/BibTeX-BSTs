@@ -1,6 +1,6 @@
 Add the following to your LaTeX preamble 
 
-```tex
+```
 \usepackage[super]{natbib}
 \setcitestyle{citesep={,}}
 \makeatletter  
