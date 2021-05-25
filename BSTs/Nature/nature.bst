@@ -4,7 +4,7 @@
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `seq-no,nm-rvvc,nmlm,x4,m4,mcite,mct-1,mct-x4,yr-par,xmth,vol-bf,vnum-x,volp-com,num-xser,jnm-x,blk-tit,ppx,xedn,amper,and-xcom,etal-xc,etal-it,nfss,')
+%% merlin.mbs  (with options: `seq-no,nm-rvvc,nmlm,x4,m1,mcite,mct-1,mct-x4,yr-par,xmth,vol-bf,vnum-x,volp-com,num-xser,jnm-x,blk-tit,ppx,xedn,amper,and-xcom,etal-xc,etal-it,nfss,')
 %% ----------------------------------------
 %% *** Nature letter style bibliography ***
 %% 
@@ -384,7 +384,7 @@ FUNCTION {format.names}
       't :=
       nameptr #1 >
         {
-          nameptr #4
+          nameptr #1
           #1 + =
           numnames #4
           > and

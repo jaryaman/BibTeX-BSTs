@@ -131,7 +131,7 @@ End of customized bst file
   nmlm,%: Limited authors
 %--------------------
     x4,%: Maximum of 4 authors
-    m4,%: Minimum of 4 authors
+    m1,%: Minimum of 4 authors
 %AUTHORS IN CITATIONS:
 %   %: (def) One author et al
   mcite,%: Some other truncation scheme
